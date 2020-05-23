@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="5dp"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:id="@+id/poster"
+        android:layout_marginTop="10dp"
+        android:layout_width="100dp"
+        android:layout_height="190dp"
+        android:src="@drawable/poster_aquaman"
+        >
+
+    </ImageView>
+
+    <TextView
+        android:background="@color/colorAccent"
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/poster"
+        android:text="Judul"
+        android:layout_marginTop="25dp"
+        android:textSize="25sp"
+        android:padding="5dp"
+        android:layout_marginStart="5dp"
+        android:textStyle="bold"
+        android:maxLines="5">
+
+    </TextView>
+
+    <TextView
+        android:layout_marginStart="5dp"
+        android:background="@color/colorAccent"
+        android:id="@+id/tanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="20sp"
+        android:layout_below="@id/judul"
+        android:layout_toEndOf="@id/poster"
+        android:text="@string/_2019"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        >
+
+    </TextView>
+    <TextView
+        android:maxLines="2"
+        android:id="@+id/pg"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pg_13"
+        android:layout_marginRight="5dp"
+        android:layout_toEndOf="@id/poster"
+        android:layout_below="@id/tanggal"
+        android:layout_marginTop="10dp"
+        >
+
+    </TextView>
+    <TextView
+        android:id="@+id/tanggal2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_12_3_2019"
+        android:layout_toEndOf="@id/pg"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/tanggal">
+
+    </TextView>
+
+    <TextView
+        android:layout_marginStart="5dp"
+        android:id="@+id/asal"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/amerika"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/tanggal2"
+        android:layout_below="@id/tanggal"
+        >
+
+    </TextView>
+    <TextView
+        android:maxLines="4"
+        android:layout_marginTop="10dp"
+        android:id="@+id/aksi"
+        android:textSize="15sp"
+        android:layout_marginStart="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/drama"
+        android:layout_toEndOf="@+id/asal"
+        android:layout_below="@id/tanggal"
+        android:textStyle="bold">
+
+    </TextView>
+
+
+
+</RelativeLayout>
